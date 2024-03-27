@@ -1,38 +1,112 @@
 .App {
-  text-align: center;
+  height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.product-card {
+  position: relative;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.product-card img {
+  width: 100px;
+  height: 150px;
+  margin: auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.favorite-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  fill: lightgray;
+}
+.products-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.products-wrapper a {
+  text-decoration: none;
+}
+.nav-item {
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.nav-item a {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.nav-item a:hover {
+  color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cart {
+  cursor: pointer;
+}
+.cart-wrapper {
+  width: 80%;
+  margin: auto;
+}
+.cart-wrapper ul li {
+  display: flex;
+  justify-content: space-between;
+}
+.link-wrapper a {
+  text-decoration: none;
+}
+.full-product {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+/* .full-product div {
+  width: 40%;
+}
+.full-product img {
+  width: 40%;
+} */
+.image-wrapper {
+  background-color: #f7f7f7;
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link {
+  color: black;
+}
+.link:hover .product-title {
+  text-decoration: underline;
+}
+.cart-row {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
+}
+.cart-row-title {
+  inline-size: 300px;
+}
+.cart-row-delete {
+  height: 43px;
+}
+.cart-total {
+  font-size: 11px;
+  color: white;
+  display: inline-block;
+  margin-left: 3px;
+}
+.link-to-cart {
+  text-decoration: none;
+}
+.cart-num {
+  display: flex;
+  background-color: #dc0069;
+  color: white;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  font-size: 10px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -3px;
+  right: 7px;
+}
+.cart-wrapper {
+  position: relative;
 }
