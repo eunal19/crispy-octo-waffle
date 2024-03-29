@@ -23,7 +23,7 @@ export const FullProductPage = ({ products }) => {
           bottom
           src={image}
           style={{
-            width: 200,
+            width: 100,
           }}
         />
       </div>

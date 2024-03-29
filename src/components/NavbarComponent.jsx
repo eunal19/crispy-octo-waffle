@@ -62,7 +62,7 @@ export const NavbarComponent = ({
         <Link to="/cart" className="link-to-cart">
           <div className="cart-wrapper">
             <AiOutlineShoppingCart
-              style={{ fill: "white", fontSize: "25px" }}
+              style={{ fill: "white", fontSize: "20px" }}
               className="cart"
               onClick={() => setActiveCategory("")}
             />
